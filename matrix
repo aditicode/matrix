@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+	int mat[3][3];
+	int i,j,sum=0;
+	printf("enter matrix values =\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("\nelement - [%d],[%d]:",i,j);
+			scanf("%d",&mat[i][j]);
+		
+        }
+	}
+	
+printf("\n matrix is :\n");
+for(i=0;i<3;i++)
+{
+	printf("\n");
+	for(j=0;j<3;j++)
+	printf("%d\t",mat[i][i]);
+}
+printf("\n\n");
+for(i=0;i<3;i++)
+{
+	sum = sum + mat[i][i];
+}
+printf("\nsum of digonal elements is =%d\n",sum);
+return 0;
+}
